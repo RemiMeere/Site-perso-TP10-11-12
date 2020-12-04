@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Random champ</title>
+    <script src="js/Random-champ.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Random-champ.css">
+</head>
+<body onLoad="initialiserPage()">
+<main>
+    <section>
+        <form action="#" onSubmit="role(this)">
+            <fieldset>
+                <legend>Choix role</legend>
+                <label for="nom">role (top mid jgl support adc):</label>
+                <input type="text" id="nom" name="nom" required>
+                <input type="submit" value="Enregistrer role">
+            </fieldset>
+        </form>
+	</section>
+	<section>
+        <form action="#" onSubmit="newrole(this)">
+            <fieldset>
+                <legend>ajouter role</legend>
+                <label for="nom">new role:</label>
+                <input type="text" id="new" name="new" required>
+				<label for="nom">new champion with role:</label>
+				<input type="text" id="newchamp" name="newc" required>
+                <input type="submit" value="Enregistrer newrole">
+            </fieldset>
+        </form>
+	</section>
+	<section>
+	</section>
+</main>
+</body>
+</html>
