@@ -9,7 +9,7 @@
 <body onLoad="initialiserPage()">
 <main>
     <section>
-        <form action="#" onSubmit="role(this)">
+        <form action="#" onSubmit="return role(this)">
             <fieldset>
                 <legend>Choix role</legend>
                 <label for="nom">role (top mid jgl support adc):</label>
@@ -19,7 +19,7 @@
         </form>
 	</section>
 	<section>
-        <form action="#" onSubmit="newrole(this)">
+        <form action="#" onSubmit="return newrole(this)">
             <fieldset>
                 <legend>ajouter role</legend>
                 <label for="nom">new role:</label>
@@ -27,10 +27,12 @@
 				<label for="nom">new champion with role:</label>
 				<input type="text" id="newchamp" name="newc" required>
                 <input type="submit" value="Enregistrer newrole">
+				
             </fieldset>
         </form>
 	</section>
 	<section>
+	
 	</section>
 </main>
 </body>
