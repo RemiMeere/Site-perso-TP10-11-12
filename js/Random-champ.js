@@ -1,7 +1,7 @@
 var champ = {
-    "top" : "jax trynda camille",
-    "mid" : "zoe katarina xerath",
-    "jgl" : "kayne elise evelyne",
+    "top" : ["jax","trynda","camille"],
+    "mid" : ["zoe","katarina","xerath"],
+    "jgl" : ["kayne","elise","evelyne"],
 }
 function initialiserPage(){
 	document.getElementsByTagName("SECTION")[2].innerHTML = "<table> <thead><th>Nom</th><th>random champ</th></thead><tbody id='hero'></tbody></table>"
@@ -10,7 +10,8 @@ function initialiserPage(){
 function role(formulaire){
 	console.log(champ)
 	let temp=formulaire.nom.value;
-	let str = champ[temp].split(' ');
+	let str = champ[temp]
+	str.sort();
 	Math.floor(Math.random() * 3);
 	document.getElementById("hero").innerHTML = str[Math.floor(Math.random() * 3)];
 	return false;
